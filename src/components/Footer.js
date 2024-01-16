@@ -7,11 +7,9 @@ const Footer = () => {
         <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg">
             <Layout className="py-8 flex items-center justify-between">
                 <span>{new Date().getFullYear()} &copy; All rights Reserved.</span>
-                <div>
-                <Link href='/'>CodeBucks</Link>
-                </div>
+            
                
-                <Link href='/'>Say hello</Link>
+                <Link href="mailto:therese.weidenstedt@gmail.com" target={"_blank"}>Contact me</Link>
 
             </Layout>
         </footer>

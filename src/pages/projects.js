@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import Footer from '@/components/Footer'
 
 const FeaturedProject = ({ type, title, summary, img, link, github}) => {
     return (
@@ -39,7 +40,7 @@ const Project = ({title, type, img, link, github}) => {
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl border 
         border-solid border-dark bg-light p-6 relative'>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl'></div>
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[1.5rem] bg-dark rounded-br-3xl'></div>
            <Link href={link} target="_blank" 
             className='w-full cursor-pointer overflow-hidden rounded-lg'
             >
@@ -74,7 +75,7 @@ const projects = () => {
 
       <main className='w-full mb-16 flex flex-col items-center justify-center'>
         <Layout className='pt-16'>
-            <AnimatedText text="Imagination trumps knowledge!" className='mb-16'/>
+            <AnimatedText text="Where Code Meets Creativity: Explore My Work" className='mb-16'/>
             <div className='grid grid-cols-12 gap-24 gap-y-32'>
                 <div className='col-span-12'>
                     <FeaturedProject 
@@ -139,7 +140,9 @@ const projects = () => {
                     />
                 </div>
             </div>
-           
+            <div className='mt-12'>
+            <Footer/>
+            </div>
         </Layout>
       </main>
     </>

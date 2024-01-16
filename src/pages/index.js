@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="description" content="Therese Weidenstedt portfolio" />
      
       </Head>
-      <main className='flex items-center text-dark w-full min-h-screen'>
+      <main className='flex items-center text-dark w-full min-h-screen mt-20'>
       <Layout className='pt-0'>
        <div className='flex items-center justify-between w-full'>
         <div className='w-1/2'>
@@ -26,8 +26,17 @@ export default function Home() {
         <div className='w-1/2 flex flex-col items-center self-center'>
           <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left'/>
           <p className='my-4 text-base font-medium'>
-            As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+            Hello there! I'm a passionate full-stack developer on a mission to transform creative ideas into captivating web applications. 
+            Whether it's crafting seamless user experiences or diving into the backend magic, I thrive on bringing digital visions to life.
+
+            <br/>
+            <br/>
+            Take a stroll through my latest projects, where I share my journey and expertise in the world of web 
+            development. Specializing in React.js, I love the art of creating dynamic and user-friendly interfaces. 
+            <br/>
+            <br/>
+            Join me as I embark on this exciting coding adventure – where every line of code tells a story. 
+            Let's build something extraordinary together!
           </p>
           <div className='flex items-center self-start mt-2'>
             <Link href="dummy.pdf" target={"_blank"} 
@@ -40,7 +49,9 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
           </div>
         </div>
         </div>
-        <Footer/>
+        <div className='mt-10'>
+        <Footer />
+        </div>
       </Layout>
       <HireMe/>
       </main>

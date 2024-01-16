@@ -8,6 +8,7 @@ import Skills from '@/components/skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import Head from 'next/head'
+import Footer from '@/components/Footer'
 
 const AnimatedNumbers = ({value}) => {
   const ref = useRef(null);
@@ -44,12 +45,35 @@ const about = () => {
     </Head>
     <main className='flex w-full flex-col items-center justify-center'>
      <Layout className='pt-16'>
-        <AnimatedText text="Develop a passion for learning. If you do, you will never cease to grow." className="mb-16"></AnimatedText>
+        <AnimatedText text="Learning: Your Gateway to Endless Growth" className="mb-16"></AnimatedText>
       <div className='grid w-full grid-cols-8 gap-16'>
         <div className='col-span-3 flex flex-col items-start justify-start'>
           <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>About me</h2>
           <p className='font-medium'>
-            Text about me goes here
+           
+<b>Tech Mastery: </b>
+ Proficient in JavaScript, with a focus on React.js, I wield the power of Express.js, 
+Node.js, and MongoDB in the backend. From crafting stylish user interfaces with HTML, CSS, and Tailwind 
+to securing APIs with JWT, my technical toolkit is robust and versatile.
+<br/>
+<br/>
+<b>Proven Performance: </b> Despite being a recent graduate from Linné University, my portfolio boasts impactful 
+projects showcasing my knack for problem-solving and collaborative teamwork.
+<br/>
+<br/>
+<b>Beyond Coding: </b>
+ With a background as a successful salesperson, store manager, and visual merchandiser, I bring a unique 
+blend of business acumen and design sensibility to every project.
+<br/>
+<br/>
+<b>Aesthetic Eye: </b>
+My experience in decor has honed my ability to create visually appealing and user-friendly interfaces.
+<br/>
+<br/>
+<b>Continuous Learner: </b>
+ Outside the digital realm, you'll find me at the gym, exploring nature, experimenting 
+in the kitchen, and diving into books. I thrive on learning and am always eager to expand my skill set.
+
           </p>
           <p className='my-4 font-medium'>
 
@@ -92,6 +116,7 @@ const about = () => {
      <Skills />
      <Education />
      <Experience/>
+      <Footer/>
      </Layout>
     </main>
     </>

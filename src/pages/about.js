@@ -6,7 +6,8 @@ import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/skills'
 import Experience from '@/components/Experience'
-
+import Education from '@/components/Education'
+import Head from 'next/head'
 
 const AnimatedNumbers = ({value}) => {
   const ref = useRef(null);
@@ -37,10 +38,10 @@ return <span ref={ref}></span>
 const about = () => {
   return (
     <>
-    
+    <Head>
       <title>Portfolio | About Page</title>
       <meta name="Therese Weidenstedt - Portfolio" content='Portfolio Therese Weidenstedt'/>
-    
+    </Head>
     <main className='flex w-full flex-col items-center justify-center'>
      <Layout className='pt-16'>
         <AnimatedText text="Develop a passion for learning. If you do, you will never cease to grow." className="mb-16"></AnimatedText>
@@ -89,6 +90,7 @@ const about = () => {
       </div>
      
      <Skills />
+     <Education />
      <Experience/>
      </Layout>
     </main>

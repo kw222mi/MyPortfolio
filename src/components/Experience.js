@@ -38,7 +38,6 @@ const Experience = () => {
         }
     )
 
-    console.log("Scroll Progress:", scrollYProgress.get());
     return (
         <div className='my-64'>
             <h2 className="text-8xl font-bold mb-32 w-full text-center">

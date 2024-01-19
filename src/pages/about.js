@@ -1,7 +1,7 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import React, { useEffect, useRef } from 'react'
-import profilePic from "../../public/images/profile/profile2.png"
+import profilePic from "../../public/images/profile/profile-front.png"
 import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/skills'
@@ -84,7 +84,7 @@ in the kitchen, and diving into books. I thrive on learning and am always eager 
         </div>
 
         <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
-          <div className='absolute top-5 -right-5 -z-10 w-[103%] h-[101%] rounded-[2rem] bg-dark'/>
+          <div className='absolute top-5 -right-5 -z-10 w-[103%] h-[101%] rounded-[2rem] bg-dark' />
           <Image src={profilePic} alt="Therese Weidenstedt" className='w-full h-auto rounded-2xl'></Image>
         </div>
 
@@ -105,7 +105,7 @@ in the kitchen, and diving into books. I thrive on learning and am always eager 
 
           <div className='flex flex-col items-end justify-center'>
             <span className='inline-block text-7xl font-bold'>
-              <AnimatedNumbers value={4}></AnimatedNumbers>+
+              <AnimatedNumbers value={3}></AnimatedNumbers>+
             </span>
             <h2 className='text-xl font-medium capitalize text-dark/75'>years of experience</h2>
           </div>

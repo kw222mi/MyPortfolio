@@ -5,7 +5,12 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import project1 from "../../public/images/projects/pwd.jpg"
+import project2 from "../../public/images/projects/pwd.jpg"
+import project3 from "../../public/images/projects/pwd.jpg"
+import project4 from "../../public/images/projects/pwd.jpg"
+import project5 from "../../public/images/projects/pwd.jpg"
+import project6 from "../../public/images/projects/pwd.jpg"
 import Footer from '@/components/Footer'
 
 const FeaturedProject = ({ type, title, summary, img, link, github}) => {
@@ -79,11 +84,14 @@ const projects = () => {
             <div className='grid grid-cols-12 gap-24 gap-y-32'>
                 <div className='col-span-12'>
                     <FeaturedProject 
-                    title="Project Applikcation"
+                    title="PWD Application"
                     img={project1}
-                    summary="jfiaotnio"
-                    link="/"
-                    github="/"
+                    summary="The Personal Web Desktop (PWD) project. This single-page application (SPA) brings 
+                    together a set of interactive sub-applications, creating a dynamic and personalized desktop 
+                    experience. This README will provide an overview of the project and its three main 
+                    components: Chat, Memory Game, and a custom Weather Application."
+                    link="https://github.com/kw222mi/PWD"
+                    github="https://github.com/kw222mi/PWD"
                     type="Featured Project"
                     />
                 </div>

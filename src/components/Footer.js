@@ -9,7 +9,7 @@ const Footer = () => {
                 <span>{new Date().getFullYear()} &copy; All rights Reserved.</span>
             
                
-                <Link href="mailto:therese.weidenstedt@gmail.com" target={"_blank"}>Contact me</Link>
+                <Link href="mailto:kw222mi@student.lnu.se" target={"_blank"}>Contact me</Link>
 
             </Layout>
         </footer>

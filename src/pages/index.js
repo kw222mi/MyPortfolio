@@ -8,7 +8,6 @@ import { LinkArrow } from '@/components/Icons'
 import Footer from '@/components/Footer'
 import HireMe from '@/components/HireMe'
 
-
 export default function Home() {
   return (
     <>
@@ -43,7 +42,7 @@ export default function Home() {
             className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
             hover:bg-light hover:text-dark border-2 border-solid border-transperant hover:border-dark'
             >Resume <LinkArrow className={'w-6 ml-1'}/></Link>
-            <Link href="mailto:therese.weidenstedt@gmail.com" target={"_blank"} 
+            <Link href="mailto:kw222mi@student.lnu.se" target={"_blank"} 
             className='ml-4 text.lg font-medium capitalize text-dark underline'
             >Contact</Link>
           </div>

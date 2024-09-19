@@ -21,12 +21,12 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           <a
             href={companyLink}
             target="_blank"
-            className="text-primary capitalize"
+            className="text-primary dark:text-primaryDark capitalize"
           >
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
         <p className="font-medium w-full">{work}</p>
@@ -39,7 +39,7 @@ const Experience = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"],
+    offset: ["start center", "end end"],
   });
 
   return (
@@ -51,7 +51,7 @@ const Experience = () => {
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="w-[4px] h-full bg-dark origin-top top-0 left-9 absolute"
+          className="w-[4px] h-full bg-dark dark:bg-light origin-top top-0 left-9 absolute"
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">

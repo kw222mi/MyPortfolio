@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/pwd.jpg"
-import project2 from "../../public/images/projects/pwd.jpg"
+import project2 from "../../public/images/projects/sokoban.png"
 import project3 from "../../public/images/projects/pwd.jpg"
 import project4 from "../../public/images/projects/pwd.jpg"
 import project5 from "../../public/images/projects/pwd.jpg"
@@ -151,33 +151,25 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
+                title="Sokoban"
+                img={project2}
+                summary="Classic sokoban game"
+                link="https://github.com/kw222mi/PWD"
+                github="https://github.com/kw222mi/PWD"
+                type="React, TypeScript, CSS"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
                 title="PWD Application"
                 img={project1}
                 summary="The Personal Web Desktop (PWD) project. This single-page application (SPA) brings 
                     together a set of interactive sub-applications, creating a dynamic and personalized desktop 
-                    experience. This README will provide an overview of the project and its three main 
-                    components: Chat, Memory Game, and a custom Weather Application."
+                    experience.  The application is composed of three main components: a Chat feature, a 
+                    Memory Game, and a custom Weather Application."
                 link="https://github.com/kw222mi/PWD"
                 github="https://github.com/kw222mi/PWD"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Project Applikcation"
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Project Applikcation"
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Project"
+                type="JavaScript, Webcomponents, Web Socket, API"
               />
             </div>
 

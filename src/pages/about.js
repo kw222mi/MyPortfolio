@@ -60,40 +60,37 @@ const about = () => {
                 About me
               </h2>
               <p className="font-medium">
-                <b>Hello! I’m Therese, </b>
-                a passionate web developer with a unique background in IT and
-                sales. My journey began in 2008 when I studied Marketing
+                I’m a passionate web developer with a unique background in IT
+                and sales. My journey began in 2008 when I studied Marketing
                 Communication and IT at Stockholm University, which laid the
                 foundation for my skills in JavaScript, HTML, CSS, and SQL.
                 Throughout my career, I’ve gained experience in both frontend
                 and backend development, with a focus on frontend technologies
-                like React.js, TypeScript, and SASS. I’ve also built and managed
-                my own e-commerce stores, which sharpened my problem-solving
-                skills and ability to work independently. While I’m comfortable
-                working across the development stack, my true passion lies in
-                creating intuitive, beautiful user interfaces. I thrive in
-                collaborative team environments, yet my entrepreneurial
-                background makes me equally effective when working
-                independently.
+                like React.js, TypeScript, and SASS.
                 <br />
                 <br />
-                <b>Beyond Coding: </b>
-                With a background as a successful salesperson, store manager,
-                and visual merchandiser, I bring a unique blend of business
-                acumen and design sensibility to every project.
+                I’ve also built and managed my own e-commerce stores, which
+                sharpened my problem-solving skills and ability to work
+                independently. While I’m comfortable working across the
+                development stack, my true passion lies in creating intuitive,
+                beautiful user interfaces. I thrive in collaborative team
+                environments, yet my entrepreneurial background makes me equally
+                effective when working independently.
                 <br />
                 <br />
-                <b>Aesthetic Eye: </b>
-                My experience in decor has honed my ability to create visually
-                appealing and user-friendly interfaces.
+                Beyond coding, I bring a unique perspective to my projects,
+                drawing from my experience as a successful salesperson, store
+                manager, and visual merchandiser. This combination of business
+                insight and design sensibility enables me to create solutions
+                that are both functional and aesthetically pleasing.
                 <br />
                 <br />
-                <b>Continuous Learner: </b>
-                Outside the digital realm, you&apos;ll find me at the gym,
-                exploring nature, experimenting in the kitchen, and diving into
-                books. I thrive on learning and am always eager to expand my
-                skill set. I believe in continuous growth, both personally and
-                professionally.
+                Outside of work, I am a lifelong learner. Whether at the gym,
+                exploring nature, experimenting in the kitchen, or diving into a
+                good book, I am always seeking new ways to grow both personally
+                and professionally. I believe in the power of continuous
+                learning and am always eager to expand my skill set.
+            
               </p>
               <p className="my-4 font-medium"></p>
               <p className="font-medium"></p>
@@ -116,7 +113,10 @@ const about = () => {
               ></Image>
             </div>
 
-            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+            <div
+              className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 
+            xs:hidden sm:hidden md:hidden lg:hidden lx:hidden 2xl:hidden"
+            >
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={50}></AnimatedNumbers>+

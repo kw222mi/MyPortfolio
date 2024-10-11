@@ -153,9 +153,11 @@ const projects = () => {
               <FeaturedProject
                 title="Sokoban"
                 img={project2}
-                summary="Classic sokoban game"
-                link="https://github.com/kw222mi/PWD"
-                github="https://github.com/kw222mi/PWD"
+                summary="Classic sokoban game. A school group project where the task was to create a sokoban pussle game. 
+                The objective of Sokoban is to push all the boxes onto the storage locations. Once all the boxes are 
+                correctly placed, the level is completed, and the player can progress to the next challenge."
+                link="https://sokoban-dfmc796ig-kw222mis-projects.vercel.app/"
+                github="https://github.com/kw222mi/sokoban"
                 type="React, TypeScript, CSS"
               />
             </div>

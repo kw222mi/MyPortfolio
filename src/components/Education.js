@@ -59,7 +59,7 @@ const Education = () => {
           />
 
           <Details
-            type="Webbprogrammering"
+            type="Web development"
             time="2021-2023"
             place="Linneuniversitetet"
             info="Development of web applications for various platforms, primarily in Javascript, both 

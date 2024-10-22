@@ -445,13 +445,14 @@ export const CircularText = ({ className, ...rest }) => (
     </defs>
 
     {/* Text som följer cirkelbanan */}
-    <text fontSize="30" fill="black">
+    <text fontSize="30" className="fill-dark dark:fill-white">
       <textPath href="#circlePath" startOffset="0%">
-        • Fullstack developer • Fullstack developer 
+        • Fullstack developer • Fullstack developer
       </textPath>
     </text>
   </svg>
 );
+
 
 
 

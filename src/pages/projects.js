@@ -5,24 +5,27 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import project1 from "../../public/images/projects/pwd.jpg"
+import project1 from "../../public/images/projects/memory-app2.jpg"
 import project2 from "../../public/images/projects/sokoban.png"
-import project3 from "../../public/images/projects/pwd.jpg"
+import project3 from "../../public/images/projects/crud.png"
 import project4 from "../../public/images/projects/pwd.jpg"
 import project5 from "../../public/images/projects/pwd.jpg"
 import project6 from "../../public/images/projects/pwd.jpg"
 import Footer from '@/components/Footer'
 import TransitionEffect from '@/components/TransitionEffect'
 
-const FeaturedProject = ({ type, title, summary, img, link, github}) => {
-    return (
-      <article
-        className="w-full flex items-center justify-between rounded-3xl relative rounded-br-2xl
+const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+  return (
+    <article
+      className="w-full flex items-center justify-between rounded-3xl relative rounded-br-2xl
         border border-solid border-dark bg-light dark:bg-dark shadow-2xl p-12 dark:border-light 
         lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
-      >
-        <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light
-        xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"></div>
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light
+        xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
+      ></div>
+      {link ? (
         <Link
           href={link}
           target="_blank"
@@ -37,13 +40,28 @@ const FeaturedProject = ({ type, title, summary, img, link, github}) => {
                 (max-width: 1200px) 50vW,
                 50vw
                 "
-          ></Image>
+          />
         </Link>
+      ) : (
+        <div className="w-1/2 overflow-hidden rounded-lg lg:w-full">
+          <Image
+            src={img}
+            alt={title}
+            className="w-full h-auto"
+            priority
+            sizes="(max-width: 768px) 100vW,
+                (max-width: 1200px) 50vW,
+                50vw
+                "
+          />
+        </div>
+      )}
 
-        <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-          <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
-            {type}
-          </span>
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
+          {type}
+        </span>
+        {link ? (
           <Link
             href={link}
             target="_blank"
@@ -53,13 +71,19 @@ const FeaturedProject = ({ type, title, summary, img, link, github}) => {
               {title}
             </h2>
           </Link>
-          <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
-            {summary}
-          </p>
-          <div className="mt-2 flex items-center">
-            <Link href={github} target="_blank" className="w-10">
-              <GithubIcon />
-            </Link>
+        ) : (
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+            {title}
+          </h2>
+        )}
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
+        <div className="mt-2 flex items-center">
+          <Link href={github} target="_blank" className="w-10">
+            <GithubIcon />
+          </Link>
+          {link && (
             <Link
               href={link}
               target="_blank"
@@ -68,11 +92,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github}) => {
             >
               Visit Project
             </Link>
-          </div>
+          )}
         </div>
-      </article>
-    );
-}
+      </div>
+    </article>
+  );
+};
+
 
 const Project = ({title, type, img, link, github}) => {
 
@@ -145,7 +171,7 @@ const projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Where Code Meets Creativity: Explore My Work"
+            text="Curious What I've Done?"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
@@ -169,7 +195,6 @@ const projects = () => {
                     together a set of interactive sub-applications, creating a dynamic and personalized desktop 
                     experience.  The application is composed of three main components: a Chat feature, a 
                     Memory Game, and a custom Weather Application."
-                link="https://github.com/kw222mi/PWD"
                 github="https://github.com/kw222mi/PWD"
                 type="JavaScript, Webcomponents, Web Socket, API"
               />
@@ -177,30 +202,14 @@ const projects = () => {
 
             <div className="col-span-12">
               <FeaturedProject
-                title="Project Applikcation"
-                img={project1}
-                summary="jfiaotnio"
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Project Applikcation"
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Project Applikcation"
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Project"
+                title="Snippet Application"
+                img={project3}
+                summary="This is a straightforward CRUD application designed for storing and organizing code snippets. 
+                Users can save their own code snippets for personal reference or browse through code shared by others 
+                for inspiration. The platform supports basic create, read, update, and delete functionality, making it 
+                easy to manage a collection of useful coding examples and ideas. "
+                github="https://github.com/kw222mi/CRUD"
+                type="JavaScript, Node.js, Express, Bootstrap, MongoDB"
               />
             </div>
           </div>

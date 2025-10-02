@@ -38,21 +38,24 @@ export default function Home() {
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                I’m Therese, a web developer with a passion for bringing ideas
-                to life through code. With a background in IT, sales, and
-                entrepreneurship, I blend technical expertise with a keen
-                understanding of user needs. I specialize in frontend
-                development, creating responsive, user-friendly applications
-                with React, JavaScript, and modern web technologies. 
+                I’m Therese, a web developer who thrives on combining creativity
+                and technology. With a background in IT, sales,
+                entrepreneurship, and visual merchandising, I bring both
+                technical expertise and a strong understanding of how people
+                think, choose, and act. I specialize in frontend development
+                with React, JavaScript, and modern web technologies, but also
+                have experience working fullstack. What drives me is creating
+                solutions that feel intuitive, engaging, and meaningful. Curious
+                and collaborative by nature, I love exploring new tools and
+                ideas — and believe the best results come when technology,
+                design, and people meet.
                 <br />
                 <br />
                 Take a stroll through my latest projects, where I share my
                 journey and expertise in the world of web development.
-                Specializing in React.js, I love the art of creating dynamic and
-                user-friendly interfaces.
+                
                 <br />
                 <br />
-               
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link

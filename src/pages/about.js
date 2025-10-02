@@ -60,37 +60,31 @@ const about = () => {
                 About me
               </h2>
               <p className="font-medium">
-                I’m a passionate web developer with a unique background in IT
-                and sales. My journey began in 2008 when I studied Marketing
-                Communication and IT at Stockholm University, which laid the
-                foundation for my skills in JavaScript, HTML, CSS, and SQL.
-                Throughout my career, I’ve gained experience in both frontend
-                and backend development, with a focus on frontend technologies
-                like React.js, TypeScript, and SASS.
+                I’m a web developer passionate about combining technology and
+                creativity to build intuitive, user-friendly solutions. My main
+                focus is frontend development, working with React, TypeScript,
+                and modern web technologies — but I also bring fullstack
+                experience that allows me to see the bigger picture.
                 <br />
                 <br />
-                I’ve also built and managed my own e-commerce stores, which
-                sharpened my problem-solving skills and ability to work
-                independently. While I’m comfortable working across the
-                development stack, my true passion lies in creating intuitive,
-                beautiful user interfaces. I thrive in collaborative team
-                environments, yet my entrepreneurial background makes me equally
-                effective when working independently.
+                Alongside my technical background, I’ve run my own e-commerce
+                stores and worked as a salesperson, store manager, and visual
+                merchandiser. This blend of business insight and design
+                sensibility gives me a unique edge: I understand not just how to
+                build products, but how they’re experienced, marketed, and sold.
                 <br />
                 <br />
-                Beyond coding, I bring a unique perspective to my projects,
-                drawing from my experience as a successful salesperson, store
-                manager, and visual merchandiser. This combination of business
-                insight and design sensibility enables me to create solutions
-                that are both functional and aesthetically pleasing.
+                I thrive in collaborative team environments but am equally
+                comfortable driving projects independently. What motivates me
+                most is solving problems, experimenting with new tools, and
+                creating digital experiences that feel both functional and
+                visually engaging.
                 <br />
                 <br />
-                Outside of work, I am a lifelong learner. Whether at the gym,
-                exploring nature, experimenting in the kitchen, or diving into a
-                good book, I am always seeking new ways to grow both personally
-                and professionally. I believe in the power of continuous
-                learning and am always eager to expand my skill set.
-            
+                Outside of work, I’m a lifelong learner — curious, structured,
+                and always seeking growth. Whether coding, exploring nature, or
+                discovering new ideas, I bring the same mindset: learn, improve,
+                and create.
               </p>
               <p className="my-4 font-medium"></p>
               <p className="font-medium"></p>
@@ -117,11 +111,41 @@ const about = () => {
               className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 
             xs:hidden sm:hidden md:hidden lg:hidden lx:hidden 2xl:hidden"
             >
-            
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={50}></AnimatedNumbers>+
+                </span>
+                <h2
+                  className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                >
+                  satisfied clients
+                </h2>
+              </div>
 
-            
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={40}></AnimatedNumbers>+
+                </span>
+                <h2
+                  className="text-xl font-medium capitalize text-dark/75 dark:text-light/75
+                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                >
+                  projects completed
+                </h2>
+              </div>
 
-            
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={3}></AnimatedNumbers>+
+                </span>
+                <h2
+                  className="text-xl font-medium capitalize text-dark/75 dark:text-light/75
+                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                >
+                  years of experience
+                </h2>
+              </div>
             </div>
           </div>
 
